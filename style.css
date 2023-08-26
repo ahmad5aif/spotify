@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+/*------------------- utility classes ---------------*/
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+i {
+    font-size: 20px;
+    width: 20px;
+    margin-right: 20px;
+}
+
+.navlink {
+    color: #b3b3b3;
+    margin-top: 20px;
+    font-size: 14px;
+    padding: 0px 12px;
+    transition: .2sec linear;
+}
+
+.navlink li:hover {
+    color: white;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 48px;
+    border-radius: 25px;
+    margin: 0 2px;
+}
+
+.btn-text {
+    color: #000000;
+    font-weight: 700;
+    padding: 8px 32px;
+}
+
+.btn:hover {
+    transform: translateZ(-2px);
+}
+
+/*  ------------------------------------------sidebar------------------------------- */
+
+.sidebar {
+    width: 20vw;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+}
+
+.title {
+    height: 10vh;
+    align-items: flex-end;
+    justify-content: start;
+    font-size: 24px;
+    margin-left: 16px;
+    margin-bottom: 16px;
+}
+
+.navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: space-between;
+
+}
+
+.title i {
+    font-size: 37px;
+}
+
+.title a {
+    display: flex;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    gap: 5px;
+}
+
+ul li {
+    padding: 12px 0;
+    font-weight: 700;
+}
+
+.preview {
+    color: #b3b3b3;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.preview p {
+    font-size: 10px;
+}
+
+.preview:hover {
+    text-decoration: underline;
+}
+
+/* ----------------------footer----------------------- */
+
+.footer {
+    background-image: linear-gradient(90deg, rgb(175 40 150), rgb(80 155 245));
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    height: 10vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0%;
+    width: 100%;
+    z-index: 999;
+}
+
+.footer-text h6 {
+    font-size: 12px;
+    font-weight: normal;
+    color: white;
+}
+
+.footer-text p {
+    font-size: 16px;
+    font-weight: normal;
+    color: white;
+}
+
+/* ---------------main-section--->>>---topbar--------------- */
+
+.main-section {
+    width: 80vw;
+    position: absolute;
+    right: 0;
+    padding: 0%;
+    flex-direction: column;
+}
+
+
+.topbar {
+    background-image: linear-gradient(260deg, rgb(36, 36, 36), #121212);
+    height: 10vh;
+    width: 80vw;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    padding: 24;
+    z-index: 999;
+}
+
+
+.top-btn-section {
+    justify-content: center;
+    padding-right: 16px;
+}
+
+.move-btn {
+    padding-left: 24px;
+    opacity: .8;
+}
+
+.move-btn a i {
+    color: white;
+    font-size: 30px;
+}
+
+.move-btn a:hover {
+    cursor: not-allowed;
+}
+
+.top-nav {
+    justify-content: space-between;
+}
+
+.signup-btn {
+    border-left: 1px solid white;
+    padding: 0 8px;
+}
+
+.link {
+    margin-top: 0;
+}
+
+.signup .btn-text,
+.top-btn .btn-text {
+    color: #b3b3b3;
+    padding: 8px;
+    font-size: 14px;
+    letter-spacing: 1.76px;
+}
+
+.top-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    margin: 0 2px;
+}
+
+.top-btn .btn-text:hover {
+    color: white;
+    font-weight: bolder;
+}
+
+/* ---------------main-section--->>>---main-bar--------------- */
+
+.mainbar {
+    width: 80vw;
+    margin-top: 10vh;
+    background-color: #121212;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    width: 100%;
+    background-color: #121212;
+    align-items: normal;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.heading {
+    justify-content: space-between;
+    margin: 16px 0;
+}
+
+.heading h1 {
+    color: white;
+    font-size: 25px;
+    padding: 0;
+
+}
+
+.heading span {
+    color: #b3b3b3;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.heading h1:hover,
+.heading span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.songs {
+    width: 100%;
+    margin: 0;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cards {
+    background-image: linear-gradient(to bottom, rgb(36, 36, 36), #121212);
+    height: 265px;
+    width: 185px;
+    border-radius: 8px;
+    padding: 0;
+    margin-bottom: 16px;
+    transition: .1s linear;
+    transition-duration: .2s;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.cards:hover {
+    background-image: none;
+    background-color: #282828;
+    cursor: pointer;
+}
+
+.wall {
+    width: 159.203px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+img {
+    width: 159.203px;
+    border-radius: 5px;
+    transition: .2s all ease .4s;
+}
+
+img:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 4px rgba(0, 0, 0, 0.19);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 14px;
+    margin: 12px 0;
+    color: white;
+    line-height: 18px;
+    justify-content: flex-start;
+}
+
+p {
+    font-weight: normal;
+    font-size: 12px;
+    color: #b3b3b3;
+    line-height: 18px;
+}
+
+.song {
+    position: relative;
+}
+
+.fa-play {
+    background-color: #1db954;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 20px;
+    margin-right: 22px;
+    transition: ease-in-out;
+    cursor: auto;
+    z-index: 1;
+}
+
+.fa-play:hover {
+    height: 51px;
+    width: 51px;
+    font-size: 23px;
+}
